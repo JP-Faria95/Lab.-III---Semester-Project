@@ -14,6 +14,7 @@ $database = 'lab3_projeto'; // ****
 
 /* A função mysqli_connect é chamada, com seus respectivos parâmetros. O resultado é armazenado na variavel $conexão.
 Utilizei a função mysqli_char_set e o parâmetro utf8mb4 para permitir a leitura de caracteres especias. */
+
 mb_internal_encoding("UTF-8");
 $conexão = mysqli_connect($hostname,$username,$password,$database);
 mysqli_set_charset($conexão,"utf8mb4");

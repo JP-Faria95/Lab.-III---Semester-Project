@@ -113,5 +113,4 @@ if($envio_mysql){
 else{
     echo "Erro ao atualizar dados.\n";
 }
-
 ?>
