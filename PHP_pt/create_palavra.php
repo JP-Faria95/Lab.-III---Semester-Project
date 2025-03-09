@@ -21,7 +21,7 @@ variaveis anteriores definidas pelo usuario. A variavel $envio_mysql vai ser res
 mysqli_query. A função mysqli_query recebe dois parametros, a variavel de conexão com o SGDB que fizemos no arquivo
 conexão_mysql.php e a própria variavel insert_query que carrega a query de inserir novos valores na tabela DICIONÁRIO. */
 
-$insert_query = "INSERT INTO DICIONÁRIO VALUES (null,'$palavra_en','$palavra_pt','$disciplina','$aplicação')";
+$insert_query = "INSERT INTO DICTIONARY VALUES (null,'$palavra_en','$palavra_pt','$disciplina','$aplicação')";
 $envio_mysql = mysqli_query($conexão,$insert_query);
 if($envio_mysql){
     echo "Termo adicionado com sucesso ao Dicionário.\n";
