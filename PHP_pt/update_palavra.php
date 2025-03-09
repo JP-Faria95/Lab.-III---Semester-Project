@@ -28,7 +28,7 @@ um valor positivo ou negativo para a variavel $checar_id. */
 
 echo "ID referencial: "; 
 $id = trim(fgets(STDIN));
-$id_query = "SELECT * FROM DICIONÁRIO WHERE ID = $id";
+$id_query = "SELECT * FROM DICTIONARY WHERE ID = $id";
 $checar_id = mysqli_query ($conexão,$id_query);
 
 /* A variavel $checar_id é parametro na função mysqli_num_rows que conta quantas linhas satisfazem a clausula where. Nesta aplicação, necessariamente,
@@ -55,7 +55,7 @@ if(mysqli_num_rows($checar_id)!= 0){
             $disciplina = trim(fgets(STDIN));
             echo "Aplicação: ";
             $aplicação = trim(fgets(STDIN));
-            $update_query = "UPDATE DICIONÁRIO SET Palavra_en = '$palavra_en', Palavra_pt = '$palavra_pt', Disciplina = '$disciplina', Aplicação = '$aplicação' WHERE ID = $id";
+            $update_query = "UPDATE DICTIONARY SET Term = '$palavra_en', Term_PT = '$palavra_pt', Subject = '$disciplina', Application = '$aplicação' WHERE ID = $id";
             break;
         case 2: 
             do{
@@ -76,19 +76,19 @@ if(mysqli_num_rows($checar_id)!= 0){
 
             if($opc == 1){
                 echo "Novo termo, em inglês: "; $palavra_en = trim(fgets(STDIN));
-                $update_query = "UPDATE DICIONÁRIO SET Palavra_en = '$palavra_en' WHERE ID = $id";
+                $update_query = "UPDATE DICTIONARY SET Term = '$palavra_en' WHERE ID = $id";
             }
             else if($opc == 2){
                 echo "Novo termo, em português: "; $palavra_pt = trim(fgets(STDIN));
-                $update_query = "UPDATE DICIONÁRIO SET Palavra_pt = '$palavra_pt' WHERE ID = $id";
+                $update_query = "UPDATE DICTIONARY SET Term_PT = '$palavra_pt' WHERE ID = $id";
             }
             else if($opc == 3){
                 echo "Nova disciplina: "; $disciplina = trim(fgets(STDIN));
-                $update_query = "UPDATE DICIONÁRIO SET Disciplina = '$disciplina' WHERE ID = $id";
+                $update_query = "UPDATE DICTIONARY SET Subject = '$disciplina' WHERE ID = $id";
             }
             else{
                 echo "Nova aplicação: "; $aplicação = trim(fgets(STDIN));
-                $update_query = "UPDATE DICIONÁRIO SET Aplicação = '$aplicação' WHERE ID = $id";
+                $update_query = "UPDATE DICTIONARY SET Application = '$aplicação' WHERE ID = $id";
             }
             break;
     }
