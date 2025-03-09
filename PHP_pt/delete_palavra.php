@@ -13,7 +13,7 @@ de zero, o ID é valido e a operação pode continuar acessando um condicional I
 o condicional ELSE (linha 46) e finaliza o programa. */
 
 echo "ID a ser removido: "; $id = trim(fgets(STDIN));
-$checar_id = "SELECT * FROM DICIONÁRIO WHERE ID = $id";
+$checar_id = "SELECT * FROM DICTIONARY WHERE ID = $id";
 $id_query = mysqli_query($conexão,$checar_id);
 if(mysqli_num_rows($id_query) != 0){
     echo "ID é valido. Confirma a deleção dos dados?\n";
@@ -36,7 +36,7 @@ if(mysqli_num_rows($id_query) != 0){
 
     switch($opc){
         case 1: 
-            $delete_query = "DELETE FROM DICIONÁRIO WHERE ID = $id"; break;
+            $delete_query = "DELETE FROM DICTIONARY WHERE ID = $id"; break;
         case 2:
             echo "--------------------\n";
             echo "Deleção cancelada.\n";
