@@ -12,7 +12,7 @@ For this project:
 - PHP 8.4.4 version.
 - SQL querys for MySQL 9.1 version.
 - Visual Studio Code 1.98.0 version.
-- VSCode Extensions: Composer; IntelliPHP; LiveServer; PHP; PHP Profilher.
+- VSCode Extensions: Composer; IntelliPHP; LiveServer; PHP; PHP Profiler.
 
 All code files contain some comments made by myself to help readers.  :)  
 Notes: This is a really simple project and naturally is considered as beginner difficulty.
