@@ -1,4 +1,4 @@
-# Lab.III_Semester_Project
+# Lab.III Semester Project
 This is my main submission for the Laboratory III - Semester Project from 'Database Development Laboratory III' class.
 The main task of this project is to implement using PHP language a CRUD function direct into one MySQL database preoviusly created.
 For this submission, i used PHP and SQL directly from the VSCode terminal.
