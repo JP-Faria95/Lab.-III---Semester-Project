@@ -1,0 +1,5 @@
+1 - botão de retornar para o inicio. DONE 
+2 - botão de reorganizar os IDs. DONE
+3 - manter os botões "radio" marcados após os recarregamentos. DONE
+4 - criar voltar ao menu anterior após mensagens finais.     DONE(para positivas)
+5 - colocar ua mensagem de "NO OPTION CHOSEN" no menu principal se não selecionada nenhuma das opções. DONE
