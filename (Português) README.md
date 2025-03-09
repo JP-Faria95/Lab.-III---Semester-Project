@@ -13,5 +13,4 @@ Para esta submissão, foram utilizadas PHP e SQL diretamente no terminal do VSCO
 A versão do Visual Studio Code foi a 1.98.0.  
 As extensões utilizadas foram Composer, IntelliPHP, Live Server, PHP e PHP Profiler.  
 Todos os arquivos aqui neste repositório contém comentários ao longo do código para facilitar a leitura e compreenção de quem o acompanhar.  
-É um projeto simples, considerado de nivel iniciante.  
-Esta versão é uma versão em Português, não oficial para entrega como submissão final. 
+É um projeto simples, considerado de nivel iniciante.
