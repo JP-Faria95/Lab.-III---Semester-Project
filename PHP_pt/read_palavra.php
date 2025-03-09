@@ -20,7 +20,7 @@ do{
     }
 }while($opc!=1 and $opc!=2);
 if($opc == 1){
-    $select_query = "SELECT * FROM DICIONÁRIO";
+    $select_query = "SELECT * FROM DICTIONARY";
 
     /* Utilizei a variavel $checar_query e a função mysqli_num_rows() para finalizar o programa caso não haja nenhum dado
     previamente inserido na tabela Dicionário. */
@@ -36,7 +36,7 @@ if($opc == 1){
 
 else{
     echo "ID referência: "; $id = fgets(STDIN);
-    $select_query = "SELECT * FROM DICIONÁRIO WHERE ID = $id";
+    $select_query = "SELECT * FROM DICTIONARY WHERE ID = $id";
 }
 
 /* A variavel $select_query vai guardar em formato string a query de projeção de dados em SQL, a SELECT. A variavel $envio_mysql
@@ -46,7 +46,7 @@ indicação. Caso diferente de zero, o programa segue para a leitura da linha es
  
 $envio_mysql = mysqli_query ($conexão, $select_query);
 if(mysqli_num_rows($envio_mysql) == 0){
-    exit("ID não existe no Dicionário, utilize a função INSERT.\n");
+    exit("ID não existe na tabela Dictionary, utilize a função INSERT.\n");
 }
 
 /* Aqui usamos o laço WHILE (linhas 58 a 65) para fazer a leitura da tabela completa. Para leitura usamos a função
@@ -56,14 +56,14 @@ variavel $coluna para guardar o resultado da função mysqli_fetch_assoc() e faz
 tradicional: "nome_do_array[indice]". No caso da leitura da tabela, os indices do array serão os nomes de cada coluna. */
 
 echo "---------------------";
-echo "\nTabela Dicionário.\n";
+echo "\nTabela Dictionary.\n";
 while($coluna = mysqli_fetch_assoc($envio_mysql)){
     echo "---------------------";
     echo "\nID: ".$coluna['ID']."\n";
-    echo "Termo, em inglês: ".$coluna['Palavra_en']."\n";
-    echo "Termo, em português: ".$coluna['Palavra_pt']."\n";
-    echo "Disciplina: ".$coluna['Disciplina']."\n";
-    echo "Aplicação: ".$coluna['Aplicação']."\n";
+    echo "Termo, em inglês: ".$coluna['Term']."\n";
+    echo "Termo, em português: ".$coluna['Term_PT']."\n";
+    echo "Disciplina: ".$coluna['Subject']."\n";
+    echo "Aplicação: ".$coluna['Application']."\n";
 }
 echo "---------------------";
 ?>
