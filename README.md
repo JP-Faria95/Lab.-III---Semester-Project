@@ -7,7 +7,8 @@ A estrutura do banco foi:
 -  Termo (palavra em inglês)
 -  Termo(PT) (palavra traduzida)
 -  Disciplina (disciplina associada à palavra)
--  Aplicação (aplicação da palavara)  
+-  Aplicação (aplicação da palavara)
+  
 Para esta submissão, foram utilizadas PHP e SQL diretamente no terminal do VSCODE.  
 A versão do Visual Studio Code foi a 1.98.0.  
 As extensões utilizadas foram Composer, IntelliPHP, Live Server, PHP e PHP Profiler.  
